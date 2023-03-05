@@ -5,12 +5,12 @@ Característica: Consulta de usuario
 
   @datosEmpleados
   Esquema del escenario: Realizar la peticion para obener la informacion de un usuario
-    Dado que el usuario cargo el id para consultar
-      | id   |
-      | <id> |
+    Dado que el usuario cargo los datos para realizar una consulta
+      | infoClient   | email   | first_name   | last_name   | date   |
+      | <infoClient> | <email> | <first_name> | <last_name> | <date> |
     Cuando se realiza la consulta a la api
     Entonces se validara la informacion obtenida
     Ejemplos:
 
-      | id   |
-      | <id> |
+      | infoClient | email                  | first_name | last_name | date    |
+      | 1          | george.bluth@reqres.in | George      | Bluth    | exitoso |
